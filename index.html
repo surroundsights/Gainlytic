@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Gainlytic – klare Vergleiche und Empfehlungen für Sport, Proteinpulver und Supplements." />
+  <meta name="theme-color" content="#f6faf7" />
+  <title>Gainlytic – Sport & Supplements klar vergleichen</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="affiliate-bar">
+    <span>Werbung · Affiliate-Links</span>
+    <span>Als Amazon-Partner verdiene ich an qualifizierten Verkäufen.</span>
+  </div>
+
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Gainlytic Startseite">
+      <svg class="brand-mark" viewBox="0 0 48 48" aria-hidden="true">
+        <path d="M24 3C12.4 3 3 12.4 3 24s9.4 21 21 21c8.9 0 16.5-5.5 19.6-13.2H26.2v-8h18.7C44.9 12.3 35.6 3 24 3Z" fill="currentColor" opacity=".16"/>
+        <path d="M35.7 18.1A13.5 13.5 0 1 0 36 29H24v-7h19.6A20.3 20.3 0 0 1 44 26c0 11-8.9 20-20 20S4 37 4 26 13 6 24 6c6.7 0 12.7 3.3 16.4 8.4l-4.7 3.7Z" fill="currentColor"/>
+      </svg>
+      <span>GAINLYTIC</span>
+    </a>
+    <nav class="nav" aria-label="Hauptnavigation">
+      <a href="#produkte">Produkte</a>
+      <a href="#kategorien">Kategorien</a>
+      <a href="#auswahl">Auswahl</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <a class="header-cta" href="#produkte">Produkte entdecken</a>
+  </header>
+
+  <main id="top">
+    <section class="hero section-wrap">
+      <div class="hero-copy">
+        <span class="eyebrow">SPORT · PERFORMANCE · SUPPLEMENTS</span>
+        <h1>Weniger suchen.<br><span>Besser auswählen.</span></h1>
+        <p>Übersichtliche Empfehlungen für Proteinpulver, Kreatin, Regeneration und Sport-Zubehör – ohne Preischaos und ohne unnötigen Schnickschnack.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#produkte">Empfehlungen ansehen</a>
+          <a class="btn ghost" href="#auswahl">So wählen wir aus</a>
+        </div>
+        <div class="trust-row" aria-label="Vorteile">
+          <span>✓ klare Kategorien</span>
+          <span>✓ mobile optimiert</span>
+          <span>✓ transparente Affiliate-Kennzeichnung</span>
+        </div>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <div class="orb orb-a"></div><div class="orb orb-b"></div>
+        <div class="metric-card m1"><small>FOCUS</small><strong>PROTEIN</strong><span>Whey · Vegan · Isolat</span></div>
+        <div class="metric-card m2"><small>DAILY</small><strong>CREATINE</strong><span>Monohydrat · neutral</span></div>
+        <div class="metric-card m3"><small>RECOVERY</small><strong>ESSENTIALS</strong><span>Magnesium · Omega-3</span></div>
+        <div class="hero-ring"><span>G</span></div>
+      </div>
+    </section>
+
+    <section id="kategorien" class="section-wrap categories-section">
+      <div class="section-heading">
+        <div><span class="eyebrow">SCHNELLSTART</span><h2>Was suchst du?</h2></div>
+        <p>Ein Klick filtert die Produktauswahl direkt.</p>
+      </div>
+      <div class="category-grid" id="categoryGrid"></div>
+    </section>
+
+    <section id="produkte" class="section-wrap products-section">
+      <div class="section-heading product-heading">
+        <div><span class="eyebrow">AUSWAHL</span><h2>Produkte & Empfehlungen</h2></div>
+        <p>Produktdaten sind redaktionell gepflegt. Den aktuellen Preis und die Verfügbarkeit prüfst du direkt bei Amazon.</p>
+      </div>
+
+      <div class="toolbar">
+        <label class="search-box">
+          <span aria-hidden="true">⌕</span>
+          <input id="searchInput" type="search" placeholder="Protein, Kreatin, Omega-3 …" aria-label="Produkte durchsuchen" />
+        </label>
+        <select id="categorySelect" aria-label="Kategorie filtern">
+          <option value="all">Alle Kategorien</option>
+        </select>
+        <select id="sortSelect" aria-label="Produkte sortieren">
+          <option value="featured">Empfohlen</option>
+          <option value="name">Name A–Z</option>
+          <option value="category">Kategorie</option>
+        </select>
+      </div>
+
+      <div class="filter-pills" id="filterPills"></div>
+      <div class="product-grid" id="productGrid" aria-live="polite"></div>
+      <div id="emptyState" class="empty-state" hidden>
+        <strong>Keine Treffer.</strong>
+        <span>Versuche einen anderen Suchbegriff oder entferne den Filter.</span>
+      </div>
+    </section>
+
+    <section id="auswahl" class="section-wrap method-section">
+      <div class="method-card">
+        <span class="eyebrow">TRANSPARENT STATT LAUT</span>
+        <h2>So entsteht die Auswahl</h2>
+        <p>Wir ordnen Produkte nach nachvollziehbaren Merkmalen statt mit erfundenen Testsiegeln. Bei Empfehlungen achten wir auf Produktart, Zutaten-Transparenz, alltagstaugliche Anwendung, Herstellerangaben und ein sinnvolles Preis-Leistungs-Verhältnis. Preise und Verfügbarkeit können sich ändern.</p>
+        <div class="method-points">
+          <span><b>01</b> Produktdaten prüfen</span>
+          <span><b>02</b> Kategorie & Einsatz einordnen</span>
+          <span><b>03</b> Affiliate-Link klar kennzeichnen</span>
+        </div>
+      </div>
+      <div class="notice-card">
+        <h3>Hinweis zu Supplements</h3>
+        <p>Nahrungsergänzungsmittel sind kein Ersatz für eine ausgewogene und abwechslungsreiche Ernährung sowie eine gesunde Lebensweise. Bei Erkrankungen, Medikamenten, Schwangerschaft oder Unsicherheit solltest du vor der Einnahme medizinischen Rat einholen.</p>
+      </div>
+    </section>
+
+    <section id="faq" class="section-wrap faq-section">
+      <div class="section-heading"><div><span class="eyebrow">FAQ</span><h2>Häufige Fragen</h2></div></div>
+      <div class="faq-grid">
+        <details><summary>Was bedeutet Affiliate-Link?</summary><p>Wenn du über einen entsprechend gekennzeichneten Link kaufst, kann Gainlytic eine Provision erhalten. Für dich ändert sich der Preis dadurch nicht.</p></details>
+        <details><summary>Sind die Preise auf der Seite aktuell?</summary><p>Wir zeigen bewusst keine dauerhaft gespeicherten Amazon-Preise. Den aktuellen Preis und die Verfügbarkeit siehst du nach dem Klick direkt bei Amazon.</p></details>
+        <details><summary>Ist „Empfohlen“ ein Labortest?</summary><p>Nein. Es handelt sich um eine redaktionelle Auswahl anhand der auf der Seite beschriebenen Kriterien, sofern nicht ausdrücklich etwas anderes angegeben ist.</p></details>
+        <details><summary>Wie funktioniert das Amazon-Tracking?</summary><p>Amazon-Links werden automatisch mit der Tracking-ID <code>gainlytic-21</code> versehen. Die ID kann zentral in der Website-Konfiguration geändert werden.</p></details>
+      </div>
+    </section>
+
+    <section class="section-wrap cta-section">
+      <div>
+        <span class="eyebrow">GAINLYTIC</span>
+        <h2>Dein Shortcut durch den Supplement-Dschungel.</h2>
+      </div>
+      <a class="btn primary" href="#produkte">Jetzt vergleichen</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-main section-wrap">
+      <div>
+        <a class="brand footer-brand" href="#top"><span>GAINLYTIC</span></a>
+        <p>Sport, Supplements und Performance klarer auswählen.</p>
+      </div>
+      <div class="footer-links">
+        <a href="impressum.html">Impressum</a>
+        <a href="datenschutz.html">Datenschutz</a>
+        <a href="affiliate.html">Affiliate-Hinweis</a>
+      </div>
+    </div>
+    <div class="footer-bottom section-wrap">
+      <span>© <span id="year"></span> Gainlytic</span>
+      <span>Als Amazon-Partner verdiene ich an qualifizierten Verkäufen.</span>
+    </div>
+  </footer>
+
+  <script src="config.js"></script>
+  <script src="products.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
